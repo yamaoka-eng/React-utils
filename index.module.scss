@@ -1,0 +1,16 @@
+.lodingSupe {
+  @apply w-full h-full relative overflow-hidden;
+  mask-image: url(/src/assets/supe.png);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  >img {
+    @apply w-[400%] max-w-[400%] min-w-[400%] h-full absolute top-0 left-0 block flex-shrink-0;
+    animation: left-right 1.5s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes left-right {
+  from {
+    left: -300%;
+  }
+}
